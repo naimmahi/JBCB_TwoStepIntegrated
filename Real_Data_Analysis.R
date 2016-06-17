@@ -2,7 +2,7 @@
 ###### Real Data analysis functions #########
 ###################################################
 
-Real_Data_Analysis <- function (count_matrix, length_group1, length_group2, result_directory) 
+Real_Data_Analysis <- function (count_matrix, length_group1, length_group2) 
 {
 
 	library(edgeR)

@@ -12,8 +12,7 @@ dat2=dat3[, grepl("A_|B_", colnames(dat3))]
 dat=dat2[, grep("_L01_FlowCellA", colnames(dat2))]
 group1= length(grep("A_", colnames(dat)))
 group2= length(grep("B_", colnames(dat)))
-path_to_write= "./outputDirectory/"
-result <- Real_Data_Analysis(count_matrix=dat,length_group1=group1, length_group2=group2, result_directory=path_to_write)
+result <- Real_Data_Analysis(count_matrix=dat,length_group1=group1, length_group2=group2)
 save(result, file= "./outputDirectory/result.RData")
 
 ############################# Data 2 #############################
@@ -25,6 +24,6 @@ dat=dat2[,c(2,4,1,3)]
 group1= 2
 group2= 2
 
-result.katz <- Real_Data_Analysis(count_matrix=dat,length_group1=group1, length_group2=group2, result_directory=path_to_write)
+result.katz <- Real_Data_Analysis(count_matrix=dat,length_group1=group1, length_group2=group2)
 save(result.katz, file= "./outputDirectory/result.katz.RData")
 
