@@ -10,7 +10,7 @@ kNumOfMethods=6
 plot.dat <- list()
 plot.dat["Regular_edgeR"] <- list(result.katz$res.edger[which(result.katz$res.edger$padj<fdr & abs(result.katz$res.edger$log.fold.change)>lfc),])
 plot.dat["Integrated_edgeR"] <- list(result.katz$res.integ.edger[which(result.katz$res.integ.edger$padj<fdr & abs(result.katz$res.integ.edger$log.fold.change)>lfc),])
-plot.dat["Regular_DESeq2"] <- list(result.katz$res.deseq.odg[which(result.katz$res.deseq.odg$padj<fdr & abs(result.katz$res.deseq.odg$log.fold.change)>lfc),])
+plot.dat["Regular_DESeq2"] <- list(result.katz$res.deseq[which(result.katz$res.deseq$padj<fdr & abs(result.katz$res.deseq$log.fold.change)>lfc),])
 plot.dat["Integrated_DESeq2"] <- list(result.katz$res.integ.deseq[which(result.katz$res.integ.deseq$padj<fdr & abs(result.katz$res.integ.deseq$log.fold.change)>lfc),])
 plot.dat["Regular_DSS"] <- list(result.katz$res.dss[which(result.katz$res.dss$padj<fdr & abs(result.katz$res.dss$log.fold.change)>lfc),])
 plot.dat["Integrated_DSS"] <- list(result.katz$res.integ.dss[which(result.katz$res.integ.dss$padj<fdr & abs(result.katz$res.integ.dss$log.fold.change)>lfc),])
